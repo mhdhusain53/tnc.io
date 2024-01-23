@@ -1,0 +1,330 @@
+.container {
+     margin: 1rem;
+ }
+ 
+ .LogInContainer {
+     margin: 0.5rem 0;
+ }
+ 
+ .loginByLink {
+     padding: 0.5rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .logbtn {
+     padding: 0.2rem 1rem;
+     border-radius: 3px;
+     color: #fff;
+ 
+ }
+ 
+ .FBAuth {
+     appearance: none;
+     backface-visibility: hidden;
+     background-color: #1877f2;
+     border-radius: 10px;
+     border-style: none;
+     box-shadow: none;
+     box-sizing: border-box;
+     color: #fff;
+     cursor: pointer;
+     display: inline-block;
+     font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+     font-size: 13px;
+     font-weight: 500;
+     height: 50px;
+     letter-spacing: normal;
+     line-height: 1.5;
+     outline: none;
+     overflow: hidden;
+     position: relative;
+     text-align: center;
+     text-decoration: none;
+     transform: translate3d(0, 0, 0);
+     transition: all .3s;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     vertical-align: top;
+     white-space: nowrap;
+ 
+     display: flex;
+     align-items: stretch;
+     justify-content: center;
+ }
+ 
+ .FBAuth:hover {
+     background-color: #1366d6;
+     box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+     opacity: 1;
+     transform: translateY(0);
+     transition-duration: .35s;
+ }
+ 
+ .FBAuth:hover:after {
+     opacity: .5;
+ }
+ 
+ .FBAuth:active {
+     box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+     transform: translateY(2px);
+     transition-duration: .35s;
+ }
+ 
+ .FBAuth:active:after {
+     opacity: 1;
+ }
+ 
+ .LoginGbtnText {
+     padding: 14px 28px;
+ }
+ 
+ .LoginfbbtnText {
+     padding: 14px 20px;
+ }
+ 
+ 
+ /* CSS */
+ .Button-pushable {
+     position: relative;
+     border: none;
+     background: transparent;
+     padding: 0;
+     cursor: pointer;
+     outline-offset: 4px;
+     transition: filter 250ms;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+ }
+ 
+ .Button-shadow {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 12px;
+     background: hsl(0deg 0% 0% / 0.25);
+     will-change: transform;
+     transform: translateY(2px);
+     transition:
+         transform 600ms cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .Button-edge {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 12px;
+ }
+ 
+ .GButton-edge {
+     background: linear-gradient(to left,
+             hsl(340deg 100% 16%) 0%,
+             hsl(340deg 100% 32%) 8%,
+             hsl(0deg 100% 27%) 72%,
+             hsl(340deg 100% 16%) 100%);
+ }
+ 
+ .FBButton-edge {
+     background: linear-gradient(to left,
+             hsl(240deg 100% 16%) 0%,
+             hsl(240deg 100% 32%) 8%,
+             hsl(240deg 100% 27%) 72%,
+             hsl(240deg 100% 16%) 100%);
+ }
+ 
+ .Button-front {
+     display: flex;
+     align-items: stretch;
+     position: relative;
+     border-radius: 12px;
+     font-size: var(--fs_1);
+     letter-spacing: 1px;
+     color: white;
+     will-change: transform;
+     transform: translateY(-4px);
+     transition:
+         transform 600ms cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .GButton-front {
+     background: hsl(345deg 100% 47%);
+ 
+ }
+ 
+ .FBButton-front {
+     background: #1877f2;
+ }
+ 
+ 
+ @media (min-width: 768px) {
+     .Button-front {
+         font-size: var(--fs_0_9);
+     }
+ }
+ 
+ .Button-pushable:hover {
+     filter: brightness(110%);
+     -webkit-filter: brightness(110%);
+ }
+ 
+ .Button-pushable:hover .Button-front {
+     transform: translateY(-6px);
+     transition:
+         transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .Button-pushable:active .Button-front {
+     transform: translateY(-2px);
+     transition: transform 34ms;
+ }
+ 
+ .Button-pushable:hover .Button-shadow {
+     transform: translateY(4px);
+     transition:
+         transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .Button-pushable:active .Button-shadow {
+     transform: translateY(1px);
+     transition: transform 34ms;
+ }
+ 
+ .Button-pushable:focus:not(:focus-visible) {
+     outline: none;
+ }
+ 
+ .LoginGbtnImg {
+     background-color: darkred;
+     display: flex;
+     align-items: center;
+     padding: 0 12px;
+     border-radius: 12px 0 0 12px;
+ }
+ 
+ .LoginFBbtnImg {
+     background-color: #2d477b;
+     display: flex;
+     align-items: center;
+     padding: 0 12px;
+     border-radius: 12px 0 0 12px;
+ }
+ 
+ 
+ 
+ /* form */
+ 
+ .Auth {
+     padding: 5px;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .formContainer {
+ 
+     padding: 15px;
+     background-color: #fff;
+     border-radius: 5px;
+ }
+ 
+ 
+ .FormInputDiv {
+     margin: 7px;
+ }
+ 
+ .FormInputDiv input {
+     outline: 0;
+     border: 0;
+     width: 100%;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+     border-radius: 7px;
+     padding: 10px;
+ }
+ 
+ .hrOrDividerContainer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     border: 1px solid rgba(0, 0, 0, 0.7);
+     border-left: 0;
+     border-right: 0;
+ }
+ 
+ 
+ .LogInBtn {
+     padding: 0.5rem 1rem;
+     border-radius: 5px;
+     color: #fff;
+     background-size: 100% 100%;
+     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+     background-image:
+         radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),
+         radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),
+         radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),
+         radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),
+         radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+     margin: 10px 0;
+     cursor: pointer;
+     filter: brightness(0.6);
+     transition: all 0.5s ease-in-out;
+ }
+ 
+ .activebtn{
+     filter: brightness(1);
+     transition: all 0.5s ease-in-out;
+ }
+ 
+ .LogInContainer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .forgotPass {
+     font-size: calc(0.4rem + 0.4vw);
+     color: #9e9ea7;
+     position: relative;
+ 
+ 
+ }
+ 
+ .forgotPass_Container {
+ 
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+     padding: 0 10px;
+ }
+ 
+ .forgotPass::after {
+     content: "";
+     width: 0%;
+     height: 1px;
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+     right: 0;
+     background-color: #9e9ea7;
+     transition: all 1s ease;
+ }
+ 
+ .forgotPass:hover::after {
+     width: 100%;
+     transition: all 1s ease;
+ }
+ 
+ .DontHaveAc {
+     text-align: center;
+ }
